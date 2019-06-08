@@ -1,5 +1,6 @@
 var casillas = document.querySelectorAll("main div");
 var turno = "X";
+const reinicio = document.querySelector("reinicio");
 
 casillas.forEach(casilla => {
     casilla.addEventListener( "click", function (evento) {
