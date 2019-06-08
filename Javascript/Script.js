@@ -1,5 +1,6 @@
 var casillas = document.querySelectorAll("main div");
 const h2 = document.querySelector("h2");
+const btnrestart = document.querySelector('.reinicio');
 var turno = "X";
 const reinicio = document.querySelector("reinicio");
 
@@ -20,7 +21,9 @@ casillas.forEach(casilla => {
 
 
 
-
-
-
-
+btnrestart.addEventListener('click', function(){
+	h2.innerHTML = "Usuario 1";
+	casillas.forEach(casilla => {
+		casilla.innerHTML = "";
+	});
+});
