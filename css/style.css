@@ -17,3 +17,14 @@ main div{
 	background-color: red;
 	border: 1px solid black;
 }
+
+main div .movimiento{
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
