@@ -1,9 +1,9 @@
-	
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap');	
+
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap');
 }
 
 main{
@@ -35,8 +35,8 @@ main div .movimiento{
 
 .reinicio{
 	color: #ff3355;
-	width: 30px;
+	width: 140px;
 	height: 30px;
 	position: absolute;
-
+	display: block;
 }
