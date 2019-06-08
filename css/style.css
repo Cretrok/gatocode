@@ -24,13 +24,15 @@ main div{
 
 main div .movimiento{
 	height: 60px;
-	width: 60px;
+	width: 50px;
 	position: absolute;
 	margin: auto;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	font-size: 70px;
+	line-height: 70px;
 }
 
 .reinicio{
