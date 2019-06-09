@@ -1,28 +1,31 @@
 var casillas = document.querySelectorAll("main div");
 const h2 = document.querySelector("h2");
-const btnrestart = document.querySelector('.reinicio');
 var turno = "X";
-const reinicio = document.querySelector("reinicio");
+const reinicio = document.querySelector(".reinicio");
 
 casillas.forEach(casilla => {
     casilla.addEventListener( "click", function (evento) {
-    	if( turno == 'X'){
-    		this.innerHTML = `<span class="movimiento croos">${turno}</span>`;
-    		h2.innerHTML = "Usuario 1";
-    		turno = "O";
-    		//console.log("click en: "+casilla);
-    	}else{
-    		this.innerHTML = `<span class="movimiento circle">${turno}</span>`
-    		h2.innerHTML = "Usuario 2";
-    		turno = "X";
+		if( this.childElementCount == 0){
+	    	if( turno == 'X'){
+	    		this.innerHTML = `<span class="movimiento cross">${turno}</span>`;
+	    		h2.innerHTML = "Usuario 1";
+	    		turno = "O";
+	    	}else{
+	    		this.innerHTML = `<span class="movimiento circle">${turno}</span>`
+	    		h2.innerHTML = "Usuario 2";
+	    		turno = "X";
+	    	}
+    	}else {
+    		alert("Casilla Ya Ocupada");
     	}
     });
 });    
 
 
 
-btnrestart.addEventListener('click', function(){
+reinicio.addEventListener('click', function(){
 	h2.innerHTML = "Usuario 1";
+	turno = "X";
 	casillas.forEach(casilla => {
 		casilla.innerHTML = "";
 	});
